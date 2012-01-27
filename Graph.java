@@ -15,6 +15,7 @@ public class Graph {
     }
     
     public Node getNode(String name) {
+        // I can't tell why there's a cast here or what it's doing
         return (Node)nodes.get(name);
     }
     
@@ -25,6 +26,7 @@ public class Graph {
     }
 
     public ArrayList<Edge> getEdges() {
+        // I'm sure there's a way to copy an ArrayList with a method specific to ArrayList
         return (ArrayList<Edge>)edges.clone();
     }
 
